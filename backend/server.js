@@ -7,14 +7,14 @@ import CommentRoute from "./routes/comment.route.js"
 import cors from "cors"
 import cookieParser from "cookie-parser"
 import path from "path"
-import { fileURLToPath } from "url";
+// import { fileURLToPath } from "url";
 
 
 dotenv.config()
 const app = express()
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = path.dirname(__filename);
 
 
 //default
@@ -35,9 +35,9 @@ app.use("/api/v1/blog",blogRouter)
 app.use("/api/v1/comment",CommentRoute) 
 
 app.use(express.static(path.join(_dirname, "/frontend/dist")))
-app.get("/*", (_,res) => {
-  res.sendFile(path.resolve(__dirname, "frontend","dist","index.html"))
-})
+// app.get("/*", (_,res) => {
+//   res.sendFile(path.resolve(__dirname, "frontend","dist","index.html"))
+// })
 
 app.listen((port), ()=> {
     connectDb();
