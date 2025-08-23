@@ -29,7 +29,7 @@ const YourBlog = () => {
 
     const getOwnBlog = async () => {
         try {
-            const res = await axios.get(`http://localhost:8000/api/v1/blog/get-own-blogs`, { withCredentials: true })
+            const res = await axios.get(`https://blog-4-uaoh.onrender.com/api/v1/blog/get-own-blogs`, { withCredentials: true })
             if (res.data.success) {
                 dispatch(setBlog(res.data.blogs))
             }
@@ -40,7 +40,7 @@ const YourBlog = () => {
     }
     const deleteBlog = async (id) => {
         try {
-            const res = await axios.delete(`http://localhost:8000/api/v1/blog/delete/${id}`, { withCredentials: true })
+            const res = await axios.delete(`https://blog-4-uaoh.onrender.com/api/v1/blog/delete/${id}`, { withCredentials: true })
             if (res.data.success) {
                 const updatedBlogData = blog.filter((blogItem) => blogItem?._id !== id);
                 dispatch(setBlog(updatedBlogData))
