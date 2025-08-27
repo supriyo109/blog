@@ -22,7 +22,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}))
 app.use(cookieParser())
 app.use(cors({
-  origin: 'https://blog-4-uaoh.onrender.com',
+  origin: 'https://blog-2-s756.onrender.com',
   credentials: true
 }))
 
