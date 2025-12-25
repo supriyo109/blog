@@ -65,7 +65,7 @@ const Profile = () => {
 
         try {
             setLoading(true)
-            const res = await axios.put(`https://blog-5-qvj7.onrender.com/api/v1/user/profile/update`, formData, {
+            const res = await axios.put(`https://blog-blox.onrender.com/api/v1/user/profile/update`, formData, {
                 headers: {
                     "Content-Type": "multipart/form-data"
                 },
