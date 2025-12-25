@@ -57,7 +57,7 @@
 
 //   const logoutHandler = async (e)=>{
 //     try {
-//       const res = await axios.get(`https://blog-2-s756.onrender.com/api/v1/user/logout`,{withCredentials:true})
+//       const res = await axios.get(`https://blog-5-qvj7.onrender.com/api/v1/user/logout`,{withCredentials:true})
 //       if(res.data.success){
 //         navigate("/")
 //         dispatch(setUser(null))
@@ -281,7 +281,7 @@ const Navbar = () => {
   const logoutHandler = async () => {
     try {
       const res = await axios.get(
-        `https://blog-2-s756.onrender.com/api/v1/user/logout`,
+        `https://blog-5-qvj7.onrender.com/api/v1/user/logout`,
         { withCredentials: true }
       );
       if (res.data.success) {
